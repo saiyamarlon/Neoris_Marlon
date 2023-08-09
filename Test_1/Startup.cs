@@ -36,6 +36,11 @@ namespace Test_1
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Test_1", Version = "v1" });
             });
 
+            services.AddScoped<Cuenta>();
+            services.AddScoped<Persona>();
+            services.AddScoped<Movimiento>();
+            services.AddScoped<Cliente>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
